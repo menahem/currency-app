@@ -1,0 +1,9 @@
+<div style="font-size: 12px">
+    <form>
+        <mat-form-field>
+          <mat-label>Selected Month</mat-label>
+            <input  matInput name="month" [(ngModel)]="month" placeholder="Enter month (YYMM)">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="fetchData.emit(month)">Fetch Data</button>
+    </form>
+</div>
